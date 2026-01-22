@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <form 
+            name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="contact-left"
+        >
+            <input type="hidden" name="form-name" value="contact">
+            <div class="contact-left-title">
+                <h2>Contact Us</h2>
+                <p class="contact-subtitle">Leave your message and we will definitely get back to you</p>
+             </div> 
+             <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+             <label for="email">Your email (the one in your Swipe account)</label>
+            <input type="email" name="email" placeholder="exemple@email.com" class="contact-inputs" required>
+               <label for="message">Message</label>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
+        </form>
+            <div class="contact-right">
+        </div>
+    </div>
+</body>
+</html>
